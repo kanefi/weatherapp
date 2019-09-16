@@ -1,0 +1,34 @@
+<div class="infoDisplay">
+
+<h1>Current Weather</h1>
+
+<div class="box">
+<div class="formInput">
+
+<form action="/" method="POST">
+    <label for="city">City</label>
+    <input type="text" name="city">
+    <br>
+    
+    <label for="Country">Country</label>
+    <input type="text" name="country">
+    <br>
+    
+    <input type="submit" value="send">
+</form>
+
+</div>
+
+{{!-- <p>{{data}}</p>  --}}
+<div class="weatherResults">
+<ul>
+    {{#each results}}
+        <li>{{@key}} : {{this}}</li>
+    {{/each}}
+</ul>
+{{!-- <p>{{temp}}</p> --}}
+{{!-- <p>{{windSpeed<}}</p> --}}
+{{!-- <p> He has confirmed: {{clouds}} clouds.</p> --}}
+</div>
+</div>   
+</div>
